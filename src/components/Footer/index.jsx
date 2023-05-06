@@ -9,7 +9,7 @@ function Footer() {
     <FooterContainer>
       <div className="container">
         <div className="col">
-          <h4 className="title">About Rentaly</h4>
+          <h4 className="title">About Rentride</h4>
           <p className="body">
             In tempor magna non ut labore sunt et in adipisicing do in proident
             veniam officia deserunt mollit velit aliquip sint fugiat
