@@ -40,7 +40,7 @@ const Hero = () => {
   );
 };
 
-const Card = () => {
+export const Card = () => {
   return (
     <CardContainer>
       <img src="/lambo.jpg" alt="" />
