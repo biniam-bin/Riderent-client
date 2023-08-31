@@ -40,7 +40,7 @@ export const NavWrapper = styled.div`
         .active::before{
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 2px;
             margin: 0 auto;
             height: 3px;
             width: 70%;

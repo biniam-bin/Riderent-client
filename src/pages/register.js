@@ -1,10 +1,10 @@
-import Login from '@/Screen/Login'
+import Register from '@/Screen/Register'
 import React from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout/index.jsx'
-import { LoginScreen } from '@/Screen/Login'
+import { RegisterScreen } from '@/Screen/Register'
 
-function login() {
+function register() {
     return (
         <>
             <Head>
@@ -13,10 +13,10 @@ function login() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/Logo.png" />
             </Head>
-            <LoginScreen></LoginScreen>
-            
+            <RegisterScreen></RegisterScreen>
+
         </>
     )
 }
 
-export default login
+export default register

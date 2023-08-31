@@ -1,12 +1,11 @@
 import React from 'react'
-import { DetailScreen } from "../../Screen/DetailPage"
 import Layout from '@/components/Layout'
+import DetailScreen from '@/Screen/Detail'
 
 function detail() {
     return (
         <Layout>
-
-            <div>detail</div>
+            <DetailScreen/>
         </Layout>
     )
 }

@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { doc, getDocs } from "firebase/firestore";
+import { db } from "../../services/firebase";
+import { collection } from "firebase/firestore";
 import {
   FleetsContainer,
   HeroContainer,
@@ -80,6 +83,21 @@ export const Card = () => {
 };
 
 const Fleets = () => {
+  useEffect(() => {
+    const get = async () => {
+
+      const dbRef = collection(db, "Cars");
+      const docSnap = await getDocs(dbRef);
+      docSnap.forEach((doc) => {
+        console.log(doc.data());
+      });
+    }
+    try {
+      get()
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
   return (
     <FleetsContainer>
       <h1>Our Vehicle Fleet</h1>
@@ -287,7 +305,6 @@ const Marque = () => {
           <h1>Minivan</h1>
           <div className="dot"></div>
           <h1>Exotic Cars</h1>
-         
         </div>
       </marquee>
     </MarqueContaainer>

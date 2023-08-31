@@ -23,7 +23,10 @@ export const FooterContainer = styled.div`
                 margin-top: 40px;
 
             }
-            .body{
+            .title{
+                margin-bottom: 15px;
+            }
+            .footer-body{
                 margin-top: 20px;
                 font-size: 16px;
             }

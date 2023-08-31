@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterContainer } from "./style";
-import { CiFacebook } from "react-icons/ci"
-import { GrFacebookOption } from "react-icons/gr"
+import { CiFacebook } from "react-icons/ci";
+import { GrFacebookOption } from "react-icons/gr";
 import { BsLinkedin, BsPinterest } from "react-icons/bs";
 
 function Footer() {
@@ -25,13 +25,13 @@ function Footer() {
         </div>
         <div className="col">
           <h4 className="title">Quick Links</h4>
-          <p className="body">
-            <h4>About</h4>
-            <h4>Blog</h4>
-            <h4>careers</h4>
-            <h4>News</h4>
-            <h4>Partners</h4>
-          </p>
+          <span className="footer-body">
+            <p>About</p>
+            <p>Blog</p>
+            <p>careers</p>
+            <p>News</p>
+            <p>Partners</p>
+          </span>
         </div>
         <div className="col">
           <h4 className="title">Social Network</h4>
